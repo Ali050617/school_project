@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Groups</title>
+</head>
+<body>
+    <h1>Create Groups</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="group_name">Group Name</label><br>
+        <input type="text" name="group_name" id="group_name" required><br>
+
+        <label for="group_type">Group Type</label><br>
+        <input type="text" name="group_type" id="group_type" required><br>
+        <input type="submit" value="Create groups">
+    </form>
+
+</body>
+</html>

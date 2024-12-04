@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ students.title }}</title>
+</head>
+<body>
+    <h1>{{ students.first_name }} {{ students.last_name }}</h1>
+    <h3>Details:</h3>
+    <h3>Age: {{ students.age }}</h3>
+    <h3>Email: {{ students.email }}</h3>
+    <a href="{% url 'students:delete' pk=students.pk %}">Delete</a><br>
+    <a href="{% url 'students:list' %}">Back to home</a>
+</body>
+</html>
